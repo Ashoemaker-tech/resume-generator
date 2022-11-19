@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Generator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="container">
+            <h1 class="resume-name">{{ name }}</h1>
+            <p>{{ email }}</p>
+            <p>{{ linkedIn }}</p>
+            <p>{{ summary }}</p>
+            <h2>Skills & Qualifications</h2>
+            <p>- {{ skill1 }}</p>
+            <p>- {{ skill2 }}</p>
+            <p>- {{ skill3 }}</p>
+            <p>- {{ skill4 }}</p>
+            <h2>Technologies</h2>
+            <p>- <strong>Languages: </strong>{{ languages }}</p>
+            <p>- <strong>Backend: </strong>{{ backend }}</p>
+            <p>- <strong>Frontend: </strong>{{ frontend }}</p>
+            <p>- <strong>Databases: </strong>{{ database }}</p>
+            <h2>Work History</h2>
+            <h3 class="work-title"><strong>{{ workTitle1 }}</strong></h3>
+            <p><em>{{ workDate1 }}</em></p>
+            <p>{{ workDescription1 }}</p>
+            <h3 class="work-title"><strong>{{ workTitle2 }}</strong></h3>
+            <p><em>{{ workDate2 }}</em></p>
+            <p>{{ workDescription2 }}</p>
+            <h3 class="work-title"><strong>{{ workTitle3 }}</strong></h3>
+            <p><em>{{ workDate3 }}</em></p>
+            <p>{{ workDescription3 }}</p>
+            
+            <h2>Education & Accomplishments</h2>
+            <p>- {{ acc1 }}</p>
+            <p>- {{ acc2 }}</p>
+            <p>- {{ acc3 }}</p>
+            <p>- {{ acc4 }}</p>
+    </section>
+
+</body>
+</html>

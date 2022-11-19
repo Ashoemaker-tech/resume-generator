@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Generator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="background-color: #f5f5f5;">
+
+    <nav>
+        <h1>Pdf Generator</h1>
+        <p>Generate A Resume Using this pdf Generator</p>
+    </nav>
+    <section class="container">
+        <form action="generate-pdf.php" method="post">
+            
+            <p class="desc-card">Put your Information into this form and on submission it will generate your pdf resume in the browser.</p>
+            <input type="text" name="name" placeholder="Full Name">
+            <input type="email" name="email" placeholder="Contact Email">
+            <input type="text" name="linkedIn" placeholder="LinkedIn link">
+            <textarea name="summary"  cols="30" rows="10" placeholder="Describe your strongest traits"></textarea>
+            <h2>Skills & Qualifications</h2>
+            <input type="text" name="skill1" placeholder="Enter a skill or qualification">
+            <input type="text" name="skill2" placeholder="Enter another skill or qualification">
+            <input type="text" name="skill3" placeholder="Enter another skill or qualification">
+            <input type="text" name="skill4" placeholder="Enter another skill or qualification">
+            <h2>Technologies</h2>
+            <input type="text" name="languages" placeholder="Programming languages">
+            <input type="text" name="backend" placeholder="Backend Technologies">
+            <input type="text" name="frontend" placeholder="Frontend Technologies">
+            <input type="text" name="database" placeholder="Databases Used">
+            <h2>Work History</h2>
+            <input type="text" name="workTitle1" placeholder="Job Title">
+            <input type="text" name="workDate1" placeholder="Dates Worked">
+            <textarea name="workDescription1" cols="30" rows="10" placeholder="What did you do here?"></textarea>
+            <input type="text" name="workTitle2" placeholder="Job Title">
+            <input type="text" name="workDate2" placeholder="Dates Worked">
+            <textarea name="workDescription2" cols="30" rows="10" placeholder="What did you do here?"></textarea>
+            <input type="text" name="workTitle3" placeholder="Job Title">
+            <input type="text" name="workDate3" placeholder="Dates Worked">
+            <textarea name="workDescription3" cols="30" rows="10" placeholder="What did you do here?"></textarea>
+            <h2>Education & Accomplishments</h2>
+            <input type="text" name="acc1" placeholder="Add Accomplishments">
+            <input type="text" name="acc2" placeholder="Add Accomplishments">
+            <input type="text" name="acc3" placeholder="Add Accomplishments">
+            <input type="text" name="acc4" placeholder="Add Accomplishments">
+            <div class="flex">
+                <button class="btn">Generate Resume</button>
+            </div>
+        </form>
+        </section>
+
+        <footer>
+            Check out the code on <a href="https://www.github.com/ashoemaker-tech/resume-generator">Github</a>
+        </footer>
+        
+    </body>
+    </html>
+
